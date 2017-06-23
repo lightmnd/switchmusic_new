@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+
+* {
+    font-family: 'Bungee Hairline', cursive;
+}
+
+body {
+    background: #FC0;
+}
+
 .container {
     display:flex !important;
     flex-wrap:wrap !important;
@@ -13,6 +23,14 @@
 .left {order:1; background:grey; flex-basis:100%; height:33%}
 .middle {order:2; background: black;flex-basis:100%; height:34%;}
 .right {order:3; background:grey;flex-basis:100%; height:33%;}
+
+.artists p {
+    color: #FFF;
+}
+
+.contact p {
+    color: #FFF;
+}
 
 @media screen and (min-width:900px) {
    .container {
@@ -52,6 +70,7 @@
 	.modal.right .modal-dialog {
 		position: fixed;
 		margin: auto;
+        border-radius: 50%;
 		/*width: 320px;*/
 		height: 100%;
 		-webkit-transform: translate3d(0%, 0, 0);
@@ -60,14 +79,17 @@
 		        transform: translate3d(0%, 0, 0);
 	}
 
-    .modal-dialog-middle {
+    /*.modal-dialog-middle {
         width: 100% !important;
-    }
+    }*/
 
 	.modal.left .modal-content,
 	.modal.right .modal-content {
 		overflow-y: auto;
         width: 100%;
+        opacity: 0.9;
+        background: grey;
+        color: #FFF;
 	}
 	
 	.modal.left .modal-body,
@@ -86,7 +108,7 @@
 	
 	.modal.left.fade.in .modal-dialog{
 		left: 0;
-        width: 100% !important;
+        width: 70% !important;
 	}
         
 /*Right*/
@@ -103,15 +125,25 @@
         width: 25% !important;
 	}
 
+/* Middle */
+#myModal3 > div > div {
+    width: 50%;
+    opacity: 0.9;
+    background: grey;
+    color: #FFF;
+    margin-top: 50px;
+}
+
 /* ----- MODAL STYLE ----- */
 	.modal-content {
-		border-radius: 0;
+		border-radius: 0! important;
 		border: none;
 	}
 
 	.modal-header {
 		border-bottom-color: #EEEEEE;
 		background-color: #FAFAFA;
+        color: #000;
 	}
 
 /* ----- v CAN BE DELETED v ----- */
@@ -175,7 +207,7 @@ button {
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-	text-align: right;
+	text-align: center;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -244,7 +276,7 @@ body {
 
 .Gallery-item {
 	display: inline-block;
-	width: 49%;
+	width: 37%;
     padding: 20px;
 }
 
@@ -308,4 +340,26 @@ figure:focus {
   .Gallery-item {
     width: 100%;
   }
+}
+
+/* Animated Text */
+main {
+  background-color: black;
+  color: #55ff55;
+  font-family: monospace;
+  font-size:16px;
+}
+.output {
+display:none;
+}
+.active:after {
+  content: '_';
+}
+
+.prompt p {
+    overflow: hidden;
+}
+
+.prompt2 p {
+    display: none;
 }
