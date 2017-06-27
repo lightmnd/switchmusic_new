@@ -20,8 +20,8 @@ body {
     height:100vh;
 }
 
-.left {order:1; background:grey; flex-basis:100%; height:33%}
-.middle {order:2; background: black;flex-basis:100%; height:34%;}
+.left {order:2; background:grey; flex-basis:100%; height:33%}
+.middle {order:1; background: black;flex-basis:100%; height:34%;}
 .right {order:3; background:grey;flex-basis:100%; height:33%;}
 
 .artists p {
@@ -79,7 +79,7 @@ body {
 	
 	.modal.left.fade.in .modal-dialog{
 		left: 0;
-        width: 70% !important;
+        width: 100% !important;
 	}
         
 /*Right*/
