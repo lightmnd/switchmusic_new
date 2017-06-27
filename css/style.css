@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Quantico|Raleway+Dots');
+@import url('https://fonts.googleapis.com/css?family=Exo');
 
 * {
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Exo', sans-serif;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .left {order:2; background:grey; flex-basis:100%; height:33%}
-.middle {order:1; background: black;flex-basis:100%; height:34%;}
+.middle {order:1; /*background: black;*/ flex-basis:100%; height:34%;}
 .right {order:3; background:grey;flex-basis:100%; height:33%;}
 
 .artists p {
@@ -65,7 +65,7 @@ body {
 	
 	.modal.left .modal-body,
 	.modal.right .modal-body {
-		padding: 15px 15px 80px;
+		padding: 50px 15px 80px;
 	}
 
 /*Left*/
@@ -91,10 +91,6 @@ body {
 		        transition: opacity 0.3s linear, right 0.3s ease-out;
 	}
 	
-	.modal.right.fade.in .modal-dialog {
-		right: 0;
-        width: 25% !important;
-	}
 
 /* Middle */
 #myModal3 > div > div {
@@ -162,7 +158,6 @@ body {
 button {
     margin: 0 !important;
 }
-
 
 .social-text {
     border: 1px dotted yellow;
@@ -314,13 +309,13 @@ figure:focus {
    outline: none;
 }
 
-@media screen and (max-width:960px) {
+@media only screen and (max-width:960px) {
   .Gallery-item {
     width: 33.3333%;
   }
 }
 
-@media screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
   .Gallery-item {
     width: 50%;
   }
@@ -335,8 +330,9 @@ figure:focus {
 
 /* Animated Text */
 main {
-    flex-basis:100%; height:34%;
-    background-color: black;
+    flex-basis:100%; 
+    height:34%;
+    /*background-color: black;*/
     color: yellow;
     font-family: monospace;
     font-size:16px;
@@ -347,6 +343,7 @@ display:none;
 .active:after {
   content: '_';
 }
+/* ------------- */
 
 .prompt p {
     padding: 5px 20px 5px 20px;
@@ -361,11 +358,44 @@ display:none;
 }
 
 .slang {
+    padding-top:20px;
     margin-bottom: 20;
     color: #FFF;
     font-style: italic;
 }
 
+.contact {
+    line-height: 40px;
+}
+
+/* Background Video */
+#bgvid {
+    background: none #000 !important;
+    text-align: center;
+    flex-basis: 100%;
+    height: 100vh;
+}
+
+#bgvid {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+    background: url('img/black-background-images.jpg') no-repeat;
+    background-size: cover; 
+}
+
+.producers {
+    list-style: none;
+    padding: 20px;
+    font-size: 1.3em;
+}
 
 @media screen and (min-width:600px) {
    .container {
@@ -377,7 +407,7 @@ display:none;
         align-items: stretch !important; /* align items in Cross Axis */
    }
     .left {
-        flex-basis:35% !important;
+        flex-basis:40% !important;
         min-height: 100%;
         order:1 !important;
     }
@@ -387,23 +417,101 @@ display:none;
         order:2 !important;
     }
     .right {
-        flex-basis:35% !important;
+        flex-basis:40% !important;
         min-height: 100%;
         order:3 !important;
     }
-    .logo > a > img {
-        width: 70% !important;
+
+    .modal.right.fade.in .modal-dialog {
+		right: 0;
+        width: 35%;
+	}
+
+}
+
+@media only screen and (min-device-width: 320px) {
+    div.text-center > a > img {
+        width: 57%;
+    }
+
+    .social-text {
+        width: 57%;
+    }
+
+    .slang {
+        line-height: 40px;
+    }
+
+    .modal p {
+        font-size: 2em;
+    }
+
+    #myModal3 > div > div {
+        width: 80%;
+    }
+
+    .modal.right.fade.in .modal-dialog {
+		right: 0;
+        width: 50% !important;
+	}
+
+    .modal.left.fade.in .modal-dialog {
+        left: 0;
+        width: 100% !important;
+        height: 85%;
+    }
+
+   .demo-footer {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .Gallery-item {
+        width: 49%;
+        padding: 5px;
+    }
+    
+    .text-center > p {
+        font-size: 1.3em;
     }
 }
 
-
-@media screen and (max-width:599px) {
-    .logo > a > img {
-        width: 70% !important;
+@media only screen and (min-device-width: 480px) {
+    .slang {
+        font-size: 1em;
+        line-height: 40px;
     }
 
-    .prompt, prompt2 {
+     .prompt, .prompt2 {
         display: none;
     }
 
+    .modal p {
+        font-size: 2em;
+    }
+
+    .modal.right.fade.in .modal-dialog {
+		right: 0;
+        width: 35%;
+	}
+
+    .modal.left.fade.in .modal-dialog {
+        left: 0;
+        width: 100% !important;
+        height: 85%;
+    }
+
+    .demo-footer {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .Gallery-item {
+        width: 49%;
+        padding: 5px;
+    }
+
+    .text-center > p {
+        font-size: 1.3em;
+    }
 }
