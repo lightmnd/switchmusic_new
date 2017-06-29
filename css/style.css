@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -349,9 +349,9 @@ display:none;
     padding: 5px 20px 5px 20px;
 }
 
-.prompt2 p {
-    display: none;
-}
+/*.prompt2 p {
+    display: block;
+}*/
 
 .logo > a > img {
     width: 70% !important;
@@ -430,6 +430,18 @@ display:none;
 }
 
 @media only screen and (min-device-width: 320px) {
+    .middle {
+        order: 1;
+        /* background: black; */
+        flex-basis: 70%;
+        height: 34%;
+    }
+
+    .prompt, .prompt2 {
+        font-size: 0.6em;
+        line-height: 40px;
+    }
+    
     div.text-center > a > img {
         width: 57%;
     }
@@ -481,10 +493,10 @@ display:none;
         font-size: 1em;
         line-height: 40px;
     }
-
-     .prompt, .prompt2 {
+/*
+    .prompt, .prompt2 {
         display: none;
-    }
+    }*/
 
     .modal p {
         font-size: 2em;
