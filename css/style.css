@@ -20,9 +20,13 @@ body {
     height:100vh;
 }
 
-.left {order:2; background:grey; flex-basis:100%; height:33%}
+.left {order:2; background:grey; flex-basis:100%; height:33%; opacity: 0.7;}
 .middle {order:1; /*background: black;*/ flex-basis:100%; height:34%;}
-.right {order:3; background:grey;flex-basis:100%; height:33%;}
+.right {order:3; background:grey;flex-basis:100%; height:33%; opacity: 0.7;}
+
+/*.artists {
+    opacity: 0.7;
+}*/
 
 .artists p {
     color: #FFF;
@@ -31,6 +35,10 @@ body {
 .contact p {
     color: #FFF;
 }
+/*
+.contact{
+    opacity: 0.7;
+}*/
 
 /*******************************
 * MODAL AS LEFT/RIGHT SIDEBAR
@@ -157,6 +165,10 @@ body {
 
 button {
     margin: 0 !important;
+}
+
+.close {
+    opacity: .7 !important;
 }
 
 .social-text {
@@ -329,7 +341,7 @@ figure:focus {
 }
 
 /* Animated Text */
-main {
+.prompt, .prompt2 {
     flex-basis:100%; 
     height:34%;
     /*background-color: black;*/
@@ -349,12 +361,12 @@ display:none;
     padding: 5px 20px 5px 20px;
 }
 
-/*.prompt2 p {
-    display: block;
-}*/
+.prompt2 p {
+    display: none;
+}
 
-.logo > a > img {
-    width: 70% !important;
+.logo img {
+    width: 100% !important;
 }
 
 .slang {
@@ -373,7 +385,9 @@ display:none;
     background: none #000 !important;
     text-align: center;
     flex-basis: 100%;
-    height: 100vh;
+    width: 2700px;
+    min-height: 100vh;
+    display: block;
 }
 
 #bgvid {
@@ -442,9 +456,9 @@ display:none;
         line-height: 40px;
     }
     
-    div.text-center > a > img {
-        width: 57%;
-    }
+    /*div.text-center > a > img {
+        width: 100%;
+    }*/
 
     .social-text {
         width: 57%;
@@ -464,13 +478,13 @@ display:none;
 
     .modal.right.fade.in .modal-dialog {
 		right: 0;
-        width: 50% !important;
+        width: 35% !important;
 	}
 
     .modal.left.fade.in .modal-dialog {
         left: 0;
         width: 100% !important;
-        height: 85%;
+        height: 100%;
     }
 
    .demo-footer {
@@ -510,7 +524,7 @@ display:none;
     .modal.left.fade.in .modal-dialog {
         left: 0;
         width: 100% !important;
-        height: 85%;
+        height: 100%;
     }
 
     .demo-footer {
@@ -519,7 +533,7 @@ display:none;
     }
 
     .Gallery-item {
-        width: 49%;
+        width: 33%;
         padding: 5px;
     }
 
