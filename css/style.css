@@ -175,7 +175,7 @@ button {
     border: 1px dotted yellow;
     color: #fff;
     padding: 20px;
-    width: 33%;
+    width: 56%;
     margin: 0 auto;
     text-align: center;    
 }
@@ -366,7 +366,7 @@ display:none;
 }
 
 .logo img {
-    width: 100% !important;
+    width: 50% !important;
 }
 
 .slang {
@@ -443,25 +443,29 @@ display:none;
 
 }
 
-@media only screen and (min-device-width: 320px) {
+@media only screen and (max-width: 360px) {
     .middle {
         order: 1;
         /* background: black; */
-        flex-basis: 70%;
+        flex-basis: 100%;
         height: 34%;
     }
 
     .prompt, .prompt2 {
-        font-size: 0.6em;
-        line-height: 40px;
+        display: none;
     }
     
     /*div.text-center > a > img {
         width: 100%;
     }*/
 
+
     .social-text {
-        width: 57%;
+        width: 72%;
+    }
+
+    .logo img {
+        width: 50% !important;
     }
 
     .slang {
@@ -502,15 +506,15 @@ display:none;
     }
 }
 
-@media only screen and (min-device-width: 480px) {
+@media only screen and (max-width: 480px) {
     .slang {
         font-size: 1em;
         line-height: 40px;
     }
-/*
+
     .prompt, .prompt2 {
         display: none;
-    }*/
+    }
 
     .modal p {
         font-size: 2em;
@@ -538,6 +542,6 @@ display:none;
     }
 
     .text-center > p {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 }
