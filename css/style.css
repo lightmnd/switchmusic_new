@@ -244,6 +244,7 @@ button {
     width: auto;
 }
 .flex-item {
+    margin-top: -10px;
     line-height: 20px;
     color: black;
     font-weight: bold;
