@@ -24,7 +24,7 @@ var terminal = function() {
         if(typeof char !== "undefined")
           typeChar();
         else {
-          element.append('<br/><span class="output">' + element.text().slice(9, -1) + '</span>');
+          element.append('<b><span class="output">' + element.text().slice(9, -1) + '</span></b>');
           element.removeClass('active');
           typeLine(++idx);
         }
