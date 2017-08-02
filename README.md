@@ -1,7 +1,7 @@
-# switchmusic_new
-new switch music website based on flexbox grid and bootstrap modals
+# jekyll statis website example
 
 #start webserver
 ```sh
-    http-server
+    cd /path/to/project
+    jekyll serve
 ```
