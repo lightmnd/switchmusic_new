@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background: #FC0;
+    overflow: hidden;
+}
+
+.container {
+    display:flex !important;
+    flex-wrap:wrap !important;
+    flex-direction:row !important;
+    justify-content:flex-start !important;
+    align-items:stretch !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height:100vh;
+}
+
+.left {order:1; background:grey; flex-basis:100%; height:33%; opacity: 0.7; font-size: 1.2em;}
+.middle {order:2; /*background: black;*/ flex-basis:100%; height:34%; font-size: 1.2em;}
+.right {order:3; background:grey;flex-basis:100%; height:33%; opacity: 0.7; font-size: 1.2em;}
+
+@media screen and (min-device-width: 480px){
+    .container {
+        flex-wrap:nowrap !important;
+        width: 100%;
+        height: 100vh !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: stretch !important;
+   }
+     .middle {
+        flex-basis:1 !important;
+        min-height: 100%;
+        order:2 !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .middle, .left, .right {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .left, .right {
+        max-height: 27%;
+    }
+
+    .prompt p, .prompt2 p {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-device-width: 480px){
+    .container {
+        flex-wrap:nowrap !important;
+        width: 100%;
+        height: 100vh !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: stretch !important;
+   }
+    .left {
+        flex-basis:40% !important;
+        min-height: 100%;
+        order:1 !important;
+    }
+    .middle {
+        flex-basis:1 !important;
+        min-height: 100%;
+        order:2 !important;
+    }
+    .right {
+        flex-basis:40% !important;
+        min-height: 100%;
+        order:3 !important;
+    }
+
+    .modal.right.fade.in .modal-dialog {
+		right: 0;
+        width: 35%;
+	}
+}
+
+/*.artists {
+    opacity: 0.7;
+}*/
+
+.artists p {
+    color: #FFF;
+}
+
+.contact p {
+    color: #FFF;
+}
+/*
+.contact{
+    opacity: 0.7;
+}*/
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add "left" or "right" in modal parent div, after class="modal".
+* Get free snippets on bootpen.com
+*******************************/
+	.modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+        border-radius: 50%;
+		/*width: 320px;*/
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+    /*.modal-dialog-middle {
+        width: 100% !important;
+    }*/
+
+	.modal.left .modal-content,
+	.modal.right .modal-content {
+		overflow-y: auto;
+        width: 100%;
+        opacity: 0.9;
+        background: grey;
+        color: #FFF;
+	}
+	
+	.modal.left .modal-body,
+	.modal.right .modal-body {
+		padding: 50px 15px 80px;
+	}
+
+/*Left*/
+	.modal.left.fade .modal-dialog{
+		left: -320px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		        transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+	
+	.modal.left.fade.in .modal-dialog{
+		left: 0;
+        width: 100% !important;
+	}
+        
+/*Right*/
+	.modal.right.fade .modal-dialog {
+		right: 0px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+	
+
+/* Middle */
+#myModal3 > div > div {
+    width: 50%;
+    opacity: 0.9;
+    background: grey;
+    color: #FFF;
+    margin-top: 50px;
+}
+
+/* ----- MODAL STYLE ----- */
+	.modal-content {
+		border-radius: 0! important;
+		border: none;
+	}
+
+	.modal-header {
+		border-bottom-color: #EEEEEE;
+		background-color: #FAFAFA;
+        color: #000;
+	}
+
+/* ----- v CAN BE DELETED v ----- */
+body {
+	background-color: #78909C;
+}
+
+/*.demo {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}*/
+
+.btn-demo {
+	margin: 15px;
+	padding: 10px 15px;
+	border-radius: 0;
+	font-size: 16px;
+	background-color: #FFFFFF;
+}
+
+.btn-demo:focus {
+	outline: 0;
+}
+
+.demo-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+	background-color: #212121;
+	text-align: center;
+}
+
+.demo-footer > a {
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+}
+
+.social-text a:hover {
+    text-decoration: none !important;
+    color: yellow;
+}
+
+.modal-body a {
+    color: yellow;
+}
+
+button {
+    margin: 0 !important;
+}
+
+.close {
+    opacity: .7 !important;
+}
+
+.social-text {
+    border: 1px dotted yellow;
+    color: #fff;
+    padding: 20px;
+    width: 56%;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+.social-text a {
+    text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+	text-align: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    /*box-sizing: content-box !important;*/
+    height: 100% !important;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {    
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* element centered */
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    width: auto;
+}
+.flex-item {
+    margin-top: -10px;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/* Modal Artists Gallery */
+
+body {
+	background: #222;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.container-gallery {
+	width: 100%;
+}
+
+.Gallery {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	line-height: 0;
+}
+
+.Gallery-item {
+	display: inline-block;
+	width: 40%;
+    padding: 20px;
+}
+
+figure {
+	margin: 0;
+	position: relative;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+figcaption {
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 0;
+  color: white;
+  opacity: 0;
+  height: 0;
+  line-height: 1.3;
+  transition: all .5s;
+}
+
+figcaption p{
+  text-align: center;
+  padding: 0 30px;
+  width: 100%;
+}
+
+figure:hover figcaption,
+figure:focus figcaption {
+  opacity: 1;
+  height: 100%;
+}
+
+figure:focus {
+   outline: none;
+}
+
+/* @media only screen and (max-width:960px) {
+  .Gallery-item {
+    width: 33.3333%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .Gallery-item {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .Gallery-item {
+    width: 100%;
+  }
+} */
+
+/* Animated Text */
+.prompt, .prompt2 {
+    padding-bottom: 0;
+    flex-basis:100%; 
+    height:34%;
+    /*background-color: black;*/
+    color: yellow;
+    font-family: monospace;
+    font-size:16px;
+}
+.output {
+display:none;
+}
+.active:after {
+  content: '_';
+}
+/* ------------- */
+
+.prompt p {
+    padding: 5px 20px 5px 20px;
+}
+
+.prompt2 p {
+    display: none;
+}
+
+.logo img {
+    width: 60% !important;
+}
+
+.slang {
+    padding-top:20px;
+    margin-bottom: 20;
+    color: #FFF;
+    font-style: italic;
+}
+
+.contact {
+    line-height: 40px;
+}
+
+/* Background Video */
+#bgvid {
+    background: none #000 !important;
+    text-align: center;
+    flex-basis: 100%;
+    width: 2700px;
+    min-height: 100vh;
+    display: block;
+}
+
+#bgvid {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+    background: url('img/black-background-images.jpg') no-repeat;
+    background-size: cover; 
+}
+
+.producers {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.producers li {
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+}
+
+/* @media only screen and (min-width:600px) { */
+   /* .container {
+        flex-wrap:nowrap !important;
+        width: 100%;
+        height: 100vh !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: stretch !important;
+   }
+    .left {
+        flex-basis:40% !important;
+        min-height: 100%;
+        order:1 !important;
+    }
+    .middle {
+        flex-basis:1 !important;
+        min-height: 100%;
+        order:2 !important;
+    }
+    .right {
+        flex-basis:40% !important;
+        min-height: 100%;
+        order:3 !important;
+    }
+
+    .modal.right.fade.in .modal-dialog {
+		right: 0;
+        width: 35%;
+	} */
+/* } */
+
+/* @media only screen and (max-width: 480px) {
+    .slang {
+        font-size: 1em;
+        line-height: 40px;
+    }
+
+    .prompt, .prompt2 {
+        display: none;
+    }
+
+    .modal p {
+        font-size: 2em;
+    }
+
+    .modal.right.fade.in .modal-dialog {
+		right: 0;
+        width: 35%;
+	}
+
+    .modal.left.fade.in .modal-dialog {
+        left: 0;
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .demo-footer {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .Gallery-item {
+        width: 45%;
+        padding: 5px;
+    }
+
+    .text-center > p {
+        font-size: 1em;
+    }
+} */
+
+/* @media only screen and (max-device-width: 360px) {
+    .middle {
+        order: 1;
+        background: black;
+        flex-basis: 100%;
+        height: 34%;
+    }
+
+    .prompt, .prompt2 {
+        display: none;
+    }
+    
+    
+    .social-text {
+        width: 72%;
+    }
+
+    .logo img {
+        width: 50% !important;
+    }
+
+    .slang {
+        line-height: 40px;
+    }
+
+    .modal p {
+        font-size: 2em;
+    }
+
+    #myModal3 > div > div {
+        width: 80%;
+    }
+
+    .modal.right.fade.in .modal-dialog {
+		right: 0;
+        width: 35% !important;
+	}
+
+    .modal.left.fade.in .modal-dialog {
+        left: 0;
+        width: 100% !important;
+        height: 100%;
+    }
+
+   .demo-footer {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .Gallery-item {
+        width: 49%;
+        padding: 5px;
+    }
+    
+    .text-center > p {
+        font-size: 1.3em;
+    }
+} */
