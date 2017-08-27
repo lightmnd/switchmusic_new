@@ -22,8 +22,8 @@ body {
     height:100vh;
 }
 
-.left {order:1; background:grey; flex-basis:100%; height:33%; opacity: 0.7; font-size: 1.2em;}
-.middle {order:2; /*background: black;*/ flex-basis:100%; height:34%; font-size: 1.2em; cursor: pointer;}
+.left {order:1; background:grey; flex-basis:100%; height:33%; opacity: 0.7; font-size: 1.2em; cursor: pointer;}
+.middle {order:2; /*background: black;*/ flex-basis:100%; height:34%; font-size: 1.2em;}
 .right {order:3; background:grey;flex-basis:100%; height:33%; opacity: 0.7; font-size: 1.2em; cursor: pointer;}
 
 @media screen and (min-device-width: 480px){
