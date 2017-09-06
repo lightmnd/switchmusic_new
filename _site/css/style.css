@@ -100,7 +100,8 @@ body {
 }
 
 .artist-name {
-    font-size: 1.3em;
+    margin-top: 50px;
+    font-size: 2em;
 }
 
 .contact p {
@@ -173,11 +174,12 @@ body {
 
 /* Middle */
 #myModal3 > div > div {
-    width: 50%;
+    width: 70%;
     opacity: 0.9;
     background: grey;
     color: #FFF;
     margin-top: 50px;
+    font-size: 1.5em;
 }
 
 /* ----- MODAL STYLE ----- */
@@ -190,7 +192,11 @@ body {
 		border-bottom-color: #EEEEEE;
 		background-color: #FAFAFA;
         color: #000;
-	}
+    }
+    
+   .modal-title {
+        font-size: 1em;
+   }
 
 /* ----- v CAN BE DELETED v ----- */
 body {
@@ -218,9 +224,10 @@ body {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	padding: 15px;
+	padding: 5px 15px 15px 15px;
 	background-color: #212121;
-	text-align: center;
+    text-align: center;
+    height: 80px;
 }
 
 .demo-footer > a {
@@ -250,7 +257,7 @@ button {
     border: 1px dotted yellow;
     color: #fff;
     padding: 20px;
-    width: 56%;
+    width: 67%;
     margin: 0 auto;
     text-align: center;    
 }
@@ -292,8 +299,13 @@ button {
 .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 40px !important;
+    line-height: 1 !important;
     font-weight: bold;
+}
+
+.close span {
+    vertical-align: initial;
 }
 
 .close:hover,
