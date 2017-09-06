@@ -99,6 +99,10 @@ body {
     color: #FFF;
 }
 
+.artist-name {
+    font-size: 1.3em;
+}
+
 .contact p {
     color: #FFF;
 }
