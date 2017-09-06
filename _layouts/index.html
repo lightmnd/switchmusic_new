@@ -17,12 +17,12 @@ title: Switch Music Recordings | Switch Booking
     <body>
 
     <div class="container demo">
-        <div class="left" data-toggle="modal" data-target="#myModal">
+        <div class="left">
             <div class="flex-container artists">
                 <div class="row"> 
                     <div class="flex-item">
                         <div class="text-center">
-                            <p class="">
+                            <p class="" data-toggle="modal" data-target="#myModal">
                                 Artists
                             </p>
                         </div>
@@ -36,14 +36,14 @@ title: Switch Music Recordings | Switch Booking
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Artists Roster</h4>
+                            <h4 class="modal-title" id="myModalLabel">Roster</h4>
                         </div>
                         <div class="modal-body">
                             <div class="container-gallery">
                                 <ul class="Gallery">
-                                    {% for post in site.posts %}
+                                  {% for post in site.posts %}
                                     <li class="Gallery-item">
-                                        <figure>
+                                      <figure>
                                         <!-- <img src="http://placekitten.com/g/300/200" alt="image1" /> -->
                                         <img src="{{post.image}}" alt="{{post.alt}}" />
                                         <figcaption style="overflow: hidden;">
@@ -51,12 +51,11 @@ title: Switch Music Recordings | Switch Booking
                                             <p>{{post.title}}</p><br><br>
                                             <br>
                                             <p><button class="btn btn-primary">Download Press-Kit</button></p>
-                                            <p>agent: antonio@switchmusic.it</p><br>
+                                            <!-- <p>agent: booking@switchmusic.it</p><br> -->
                                         </figcaption>
-                                        </figure> 
+                                      </figure> 
                                     </li>
-                                    {% endfor %}
-                                  
+                                  {% endfor %}
                                     <!-- <li class="Gallery-item">
                                         <figure>
                                         <img src="http://placekitten.com/g/300/200" alt="image1" />
@@ -145,7 +144,7 @@ title: Switch Music Recordings | Switch Booking
                                     <li>Tullia Benedicta</li> 
                                     <li>Youmarel</li> 
                                     <li>Bist</li> 
-                                    <li>Cijxxx</li> 
+                                    <li>Cixxx J</li> 
                                     <li style="clear:both">Giulia Olivari</li>
                                 </ul>
                             </div>
@@ -167,7 +166,7 @@ title: Switch Music Recordings | Switch Booking
                         <div>
                             <p>
                                 <main class="prompt2">
-                                <p>Click logo for info!</p>
+                                <p>Click logo for info.</p>
                                 </main>
                             </p>
                         </div>
@@ -176,7 +175,7 @@ title: Switch Music Recordings | Switch Booking
                                 <img src="img/switch_logo_white.png">
                             </a>                            
                             <div class="prompt">
-                                <p>Upcoming Programs >>></p>
+                                <p>Upcoming programs:</p>
                                 <p>September 9: Switch Music Rec -label night- @ Cassero - Bologna </p>
                                 <!--<p>September 18: Spong-X - Inside The Screen [SWC009 - LP]</p>-->
                             </div>
@@ -209,12 +208,12 @@ title: Switch Music Recordings | Switch Booking
                 </div><!-- modal-dialog -->
             </div><!-- modal -->
         </div>
-        <div class="right" data-toggle="modal" data-target="#myModal2">
+        <div class="right">
             <div class="flex-container contact">
                 <div class="row"> 
                     <div class="flex-item">
                         <div class="text-center">
-                            <p class="contact">
+                            <p class="contact" data-toggle="modal" data-target="#myModal2">
                                 Contact /<br>Booking
                             </p>
                         </div>
