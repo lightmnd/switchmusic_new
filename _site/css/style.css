@@ -58,6 +58,11 @@ body {
     .prompt p, .prompt2 p {
         font-size: 1.7em;
     }
+
+    .close {
+        font-size: 40px !important;
+        line-height: 1 !important;
+    }
 }
 
 @media screen and (min-device-width: 480px){
@@ -299,8 +304,8 @@ button {
 .close {
     color: #aaaaaa;
     float: right;
-    font-size: 40px !important;
-    line-height: 1 !important;
+    /* font-size: 40px !important; */
+    /*line-height: 1 !important;*/
     font-weight: bold;
 }
 
