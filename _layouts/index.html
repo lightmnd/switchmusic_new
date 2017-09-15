@@ -13,6 +13,7 @@ title: Switch Music Recordings | Switch Booking
     {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
+    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
     <title>Switch Music - Electronic Music Label and Booking Agency</title>    
 </head>
     <body>
