@@ -13,13 +13,14 @@ title: Switch Music Recordings | Switch Booking
     {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
+    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
     <title>Switch Music - Electronic Music Label and Booking Agency</title>    
 </head>
     <body>
 
         <script>
             // Redirect to landing page if 'form_submitted' cookie does not exist
-            //window.location.href = "/coming/coming-soon.html";
+           // window.location.href = "/coming/coming-soon.html";
         </script>
 
     <div class="container demo">
@@ -254,7 +255,7 @@ title: Switch Music Recordings | Switch Booking
 
 <footer class="demo-footer">
     <div class="social-text">
-	    <a href="https://www.bandcamp.com/label/switchmusicrec" target="_blank">BandCamp - </a><a href="https://www.facebook.com/switchmusicrec" target="_blank">FB Label - </a> <a href="https://www.soundcloud.com/switchmusicrec" target="_blank">FB Booking - </a> <a href="https://www.soundcloud.com/switchmusicrec" target="_blank">SoundCloud - </a><a href="https://www.instagram.com/switchmusicrec" target="_blank">Instagram - </a><a href="https://www.youtube.com/switchtheevent" target="_blank">Youtube</a>
+	    <a href="https://www.bandcamp.com/label/switchmusicrec" target="_blank">BandCamp - </a><a href="https://www.facebook.com/switchmusicrec" target="_blank">FB Label - </a> <a href="https://www.soundcloud.com/switchmusicrec" target="_blank">FB Booking - </a> <a href="https://www.soundcloud.com/switchbooking" target="_blank">SoundCloud - </a><a href="https://www.instagram.com/switchmusicrec" target="_blank">Instagram - </a><a href="https://www.youtube.com/switchtheevent" target="_blank">Youtube</a>
     </div>
 </footer>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
