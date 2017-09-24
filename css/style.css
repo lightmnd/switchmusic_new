@@ -459,8 +459,23 @@ display:none;
     display: none;
 }
 
-.logo img {
+.logo .logoImg {
     width: 60% !important;
+    -moz-transform: -webkit-transform .8s ease-in-out;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -o-transform: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.logoImg:hover {
+   /* Firefox */
+	-moz-transform: rotate(360deg) ;
+	/* WebKit */
+	-webkit-transform:  rotate(360deg);
+	/* Opera */
+	-o-transform: rotate(360deg) ;
+	/* Standard */
+	transform: rotate(360deg) ;
 }
 
 .slang {
