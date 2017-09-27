@@ -20,7 +20,7 @@ title: Switch Music Recordings | Switch Booking
 
         <script>
             // Redirect to landing page if 'form_submitted' cookie does not exist
-           window.location.href = "/coming/coming-soon.html";
+          // window.location.href = "/coming/coming-soon.html";
         </script>
 
     <div class="container demo">
@@ -57,7 +57,7 @@ title: Switch Music Recordings | Switch Booking
                                             <br><br>
                                             <p class="artist-name">{{post.title}}</p><br><br>
                                             <br>
-                                            <p><a href="{{post.presskit}}"><button class="btn btn-primary">Download Press-Kit</button></a></p>
+                                            <p><a href="{{post.presskit}}"><button class="press-kit btn btn-primary">Download Press-Kit</button></a></p>
                                             <!-- <p>agent: booking@switchmusic.it</p><br> -->
                                         </figcaption>
                                       </figure> 
@@ -114,7 +114,7 @@ title: Switch Music Recordings | Switch Booking
                             <div class="prompt">
                                 <p>Upcoming programs:</p>
                                 <!--<p>September 9: Switch Music Rec -label night- @ Cassero - Bologna </p>-->
-                                <p>September 19: Spong-X - Inside The Screen [SWC009 - LP]</p>
+                                <p>28 Oct: Switch Music Recordings - Label Night @ Dynamo [Bologna- IT]</p>
                             </div>
                             
                         </div>
@@ -192,6 +192,7 @@ title: Switch Music Recordings | Switch Booking
         <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
         <script src="index.js"></script>
         
+        {% include analitycs.html %}        
     </body>
 </html>
 

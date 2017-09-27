@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Light Minded
-category: Dj
+category: Dj/Producer
 image:
 - /img/Light.jpg
 presskit:
 - /presskit/PressKitLightMinded.pdf
 ---
-Light Minded is....... a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. The Coffea plant is native to subtropical Africa and some islands in southern Asia. The plant was exported from Africa to countries around the world and coffee plants are now cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India, and Africa. The two most commonly grown are the highly regarded arabica, and the less sophisticated but stronger and more hardy robusta. Once ripe, coffee beans are picked, processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural commodities in the world. Once traded, the coffee beans are roasted to varying degrees, depending on the desired flavor. Roasted beans are ground and brewed to produce coffee as a beverage.
-
+Light Minded, or Roberto Affuso, stands out for its approach which reflects his attention to new technologies without ever moving away definitively from the past. Playing since the nineties, in 2009 he became the art director of Switch, electronic music party based in Bologna, and now the co-founder of Switch Music Recordings, a record label that crosses the deepest techno as well as the most delicate electronic vibes.
