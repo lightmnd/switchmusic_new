@@ -45,28 +45,8 @@ var terminal = function() {
 
 terminal();
 
-
 /* promt 2 */
 setTimeout(() =>{
 var $lines = $('.prompt2 p');
     $lines.show();
-    console.log('ok');
 }, 7000);
-
-
-
-// var logo = $('.logo img');
-
-// function autoupdate() {
-//   setTimeout(function(){
-//      $(logo).css('display', 'none');
-//      setTimeout(function(){
-//         $(logo).css('display', 'block');
-//         setTimeout(autoupdate, 50);
-//      }, 1000)
-//   }, 300)
-// }
-
-// $(function(){ //same as $(document).ready(function(){
-//    setTimeout(autoupdate, 50);
-// });
