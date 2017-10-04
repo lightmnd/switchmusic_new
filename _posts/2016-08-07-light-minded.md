@@ -5,6 +5,6 @@ category: Dj/Producer
 image:
 - /img/Light.jpg
 presskit:
-- /presskit/PressKitLightMinded.pdf
+- /presskit/LightMinded.zip
 ---
 Light Minded, or Roberto Affuso, stands out for its approach which reflects his attention to new technologies without ever moving away definitively from the past. Playing since the nineties, in 2009 he became the art director of Switch, electronic music party based in Bologna, and now the co-founder of Switch Music Recordings, a record label that crosses the deepest techno as well as the most delicate electronic vibes.
