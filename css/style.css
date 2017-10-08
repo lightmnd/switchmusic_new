@@ -90,6 +90,20 @@ body {
         left: 0;
         width: 70% !important;
     }
+
+    .demo-footer {height: 120px !important;}
+    .social-text {
+        width: 100% !important;
+        height: 110px;
+    }
+    
+    .social-text a {
+        font-size: 33px !important;
+    }
+
+    .Gallery-item {
+        width: 60% !important;
+    }
 }
 
 @media screen and (min-device-width: 480px){
@@ -126,6 +140,7 @@ body {
         left: 0;
         width: 70% !important;
     }
+
 }
 
 @media screen and (min-device-width: 768px){
@@ -144,8 +159,8 @@ body {
 }
 
 .artist-name {
-    margin-top: 50px;
-    font-size: 2em;
+    margin-top: 20px;
+    font-size: 1em;
 }
 
 .contact p {
