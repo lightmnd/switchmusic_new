@@ -43,6 +43,7 @@ body {
 
     .prompt p {
         margin-top: -10px;
+        opacity: 0;
     }
     .prompt2 p {
         margin-bottom: -10px;
@@ -77,11 +78,17 @@ body {
 
     .prompt p, .prompt2 p {
         font-size: 1.7em;
+         opacity: 0;
     }
 
     .close {
         font-size: 40px !important;
         line-height: 1.2 !important;
+    }
+
+    .modal.left.fade.in .modal-dialog {
+        left: 0;
+        width: 70% !important;
     }
 }
 
@@ -113,7 +120,19 @@ body {
     .modal.right.fade.in .modal-dialog {
 		right: 0;
         width: 35%;
-	}
+    }
+    
+    .modal.left.fade.in .modal-dialog {
+        left: 0;
+        width: 70% !important;
+    }
+}
+
+@media screen and (min-device-width: 768px){
+    .modal.left.fade.in .modal-dialog{
+        left: 0;
+        width: 100% !important;
+    }
 }
 
 /*.artists {
@@ -184,7 +203,7 @@ body {
 	
 	.modal.left.fade.in .modal-dialog{
 		left: 0;
-        width: 100% !important;
+        width: 100%;
 	}
         
 /*Right*/
