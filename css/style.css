@@ -65,6 +65,7 @@ body {
     
     button.press-kit {
         font-size: 0.8em !important;
+        background-color: #FCEB34;
     }
 
     .artist-name {
@@ -297,11 +298,11 @@ body {
 
 .social-text a:hover {
     text-decoration: none !important;
-    color: yellow;
+    color: #FCEB34;
 }
 
 .modal-body a {
-    color: yellow;
+    color: #FCEB34;
 }
 
 button {
@@ -313,7 +314,7 @@ button {
 }
 
 .social-text {
-    border: 1px dotted yellow;
+    border: 1px dotted #FCEB34;
     color: #fff;
     padding: 20px;
     width: 67%;
@@ -493,7 +494,7 @@ figure:focus {
     flex-basis:100%; 
     height:34%;
     /*background-color: black;*/
-    color: yellow;
+    color: #FCEB34;
     font-family: monospace;
     font-size:16px;
 }
