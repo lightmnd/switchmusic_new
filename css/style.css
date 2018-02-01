@@ -76,7 +76,8 @@ button.press-kit:hover {
     button.press-kit {
         font-size: 0.8em !important;
         background-color: #FCEB34 !important;
-        color: #000;
+        color: #000 !important;
+        border: none !important;
     }
 
     .artist-name {
