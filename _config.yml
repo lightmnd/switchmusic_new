@@ -17,7 +17,7 @@ title: Switch Music Recordings - Electronic Music Label and Bookin Agency
 email: info@switchmusic.it
 description: Switch Music is a Italian-based techno & electronic organization. Formed in Bologna in 2009 as a collective of artists and party designers, we now work as records label and booking agency.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Build settings
 markdown: kramdown
