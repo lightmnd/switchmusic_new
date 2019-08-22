@@ -22,7 +22,7 @@ url: "https://www.switchmusic.it" # the base hostname & protocol for your site, 
 # Build settings
 markdown: kramdown
 
-plugins:
+# plugins:
  #
 
 # Exclude from processing.
