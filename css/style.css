@@ -102,6 +102,7 @@ button.press-kit:hover {
     .modal.left.fade.in .modal-dialog {
         left: 0;
         width: 70% !important;
+        height: 100vh;
     }
 
     .demo-footer {height: 120px !important;}
